@@ -6,6 +6,10 @@ def check_guess():
     guess = int(entry.get())
     if guess == number:
         messagebox.showinfo("Result", "🎉 Correct! You guessed the number!")
+        restart = messagebox.askyesno("Play Again", "Would you like to play again?")
+        if restart:
+            global number
+            number = random.randint(1, 10)
     elif guess < number:
         messagebox.showinfo("Result", "Too low! Try again.")
     else:
