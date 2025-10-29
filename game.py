@@ -1,3 +1,5 @@
+#I acknowledge the use of ChatGPT for creation of this game
+
 import random
 import tkinter as tk
 from tkinter import messagebox
